@@ -1,5 +1,6 @@
+require('dotenv').config()
 const mongoose = require("mongoose");
-  mongoose.connect("mongodb://localhost:27017/pizza",{
+  mongoose.connect(process.env.DATABASE,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     // useCreateIndex:true
